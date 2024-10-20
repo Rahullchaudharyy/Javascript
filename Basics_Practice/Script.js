@@ -45,4 +45,4 @@ console.log("Splice Value :", SpliceArray)
 console.log("Origina Arrays after splice :", OriginalArrays)
 
 
-console.clear()
+// console.clear()
