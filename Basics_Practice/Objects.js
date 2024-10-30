@@ -26,6 +26,86 @@ console.log( typeof typeCheak)
 
 console.log(JsUser["name"])
 
+// SingleTon 
 
 
 
+const tinderUser = new Object()
+tinderUser.id = 12;
+tinderUser.name = "Rahul";
+tinderUser.isLoggedIn = false;
+
+
+
+const regularUser = {
+  email:"ra@gmail.com",
+  fullName:{
+    userFullName:{
+      firstName:"Rahul",
+      lastName:"chaudhary"
+    }
+  }
+}
+
+
+// console.log(regularUser.fullName.userFullName.lastName)
+
+
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+
+const car = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2020
+};
+
+
+// let Obj3 = Object.assign({},person,car)
+let Obj3 = {...person,...car}
+
+const user = [
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,           
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+  {
+    id:2,
+    email:"alkjfsd@gmail.com"
+  },
+
+]
+
+console.log(Obj3)
+console.log(tinderUser)
+
+console.log(Object.keys(tinderUser))
+console.log(Object.values(tinderUser))
+
+
+const {name:NewUser} = tinderUser
+console.log(NewUser)

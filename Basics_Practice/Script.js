@@ -46,3 +46,11 @@ console.log("Origina Arrays after splice :", OriginalArrays)
 
 
 // console.clear()
+
+
+let newArrays = [12,34,56,78]
+
+newArrays.pop()
+
+console.log(newArrays)
+
