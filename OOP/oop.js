@@ -40,3 +40,6 @@ console.log(userTwo instanceof UUser)
 // 4.finally get the new object . 
 
 
+
+NewName = "NOT A TYPE"
+console.log(NewName)
